@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <LINK REL=StyleSheet HREF="trivial.css" TYPE="text/css" MEDIA=screen>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg=="
+        crossorigin="anonymous">
+
+</head>
+
+<body class="fondoTodo">
+    <header class="ancho sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+            <a class="navbar-brand">
+                <h1 class="textoGrande">Trivia</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="d-flex flex-row justify justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="trivial_main.html">
+                                <h2 class="textoNormal">Home</h2>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trivial_juego.html">
+                                <h2 class="textoNormal">Play</h2>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trivial_info.html">
+                                <h2 class="textoNormal">Info</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="ancho fondoMain rounded border border-dark">
+        <div class="d-flex flex-row justify-content-between align-items-top">
+            <div id="divContenedorTarjeta" class="col-7 ml-2 shadow p-3 rounded fondo border border-dark"></div>
+            <div id="divContenedorInformacion" class="col-5">
+                <p class="parrafo">
+                    Here's an example of a <strong>card</strong> you'll see at <a href="trivial_juego.html">Play</a>
+                    section.
+                    Click on the answer to check if it's correct or not.
+                </p>
+                <p class="parrafo">
+                    In the <strong>Play</strong> section, you will be able to select
+                    the category you want to show questions about.
+                </p>
+                <p class="parrafo">
+                    You will only be able to try once (obviously), so choose wisely!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="ancho fondoMain rounded container fondoFooter">
+        <div class="d-flex flex-row justify-content-between align-items-center text-light">
+            <div class="d-flex flex-row justify-content-between align-items-start textoPequeno">
+                <i class="textoFooter">© Trivia 2020</i>
+            </div>
+            <div class="textoPequeno">
+                <a href="trivial_main.html" class="text-light textoFooter">Home</a>
+                <a href="trivial_juego.html" class="text-light textoFooter">Play</a>
+                <a href="trivial_info.html" class="text-light textoFooter">Info</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="trivial.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
