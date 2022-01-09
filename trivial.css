@@ -1,33 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 
-h1{
+h1 {
     font-family: 'Bangers';
 }
+
 h2 {
     font-family: 'Bangers';
 }
-.ancho{
+
+.ancho {
     max-width: 100%;
 }
-@media only screen and (min-width: 992px){
-    .ancho{
+
+@media only screen and (min-width: 992px) {
+    .ancho {
         max-width: 80%;
         margin-left: 10%;
     }
-    .textoGrande{
+
+    .textoGrande {
         font-size: xx-large;
     }
 }
-.fondo{
+
+.fondo {
     background-color: #f8f9fa;
 }
-.textoNormal{
+
+.textoNormal {
     font-size: x-large;
     margin-right: 5px;
     margin-left: 5px;
     text-indent: 20px;
 }
-.textoInfo{
+
+.textoInfo {
     font-size: medium;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -35,55 +42,69 @@ h2 {
     margin-left: 5px;
     text-indent: 20px;
 }
-.textoGrande{
+
+.textoGrande {
     font-size: xx-large;
     margin-right: 5px;
     margin-left: 5px;
     margin-top: 15%;
 }
-.textoScore{
+
+.textoScore {
     font-size: large;
     margin-top: 2%;
 }
-.textoPequeno{
+
+.textoPequeno {
     font-size: small;
 }
-.textoFooter{
+
+.textoFooter {
     font-family: 'Bangers';
     font-size: small;
 }
-.fondoMain{
+
+.fondoMain {
     padding-top: 1%;
     background-color: rgb(211, 211, 211);
     padding-bottom: 1%;
 }
-.fondoFooter{
+
+.fondoFooter {
     background-color: #343a40;
 }
-.colorFacil{
+
+.colorFacil {
     background-color: green;
 }
-.colorMedium{
+
+.colorMedium {
     background-color: yellow;
 }
-.colorHard{
+
+.colorHard {
     background-color: red;
 }
-.colorInactivo{
+
+.colorInactivo {
     background-color: lightgray;
 }
-.colorActivo{
+
+.colorActivo {
     background-color: darkgray;
 }
-.parrafo{
+
+.parrafo {
     text-indent: 2%;
 }
+
 .myProgress {
     width: 100%;
     background-color: #ddd;
     border-radius: 6px;
     padding: 0.5px;
 }
+
 .myBar {
     width: 1%;
     height: 30px;
