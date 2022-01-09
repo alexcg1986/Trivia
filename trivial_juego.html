@@ -69,19 +69,21 @@
         </div>
 
         <div id="mostrarJuego" class="d-none">
-            <div class="d-flex flex-row justify-content-between align-items-start">
-                <div class="form-group ml-2 rounded">
+            <div class="row d-flex flex-row justify-content-between align-items-start mb-4">
+                <div class="form-group col-11 col-md-5 mb-2 rounded" style="margin:auto">
                     <select class="form-control fondo shadow border border-dark" id="contenedorCategoria">
                         <option disabled selected>Select a category</option>
                     </select>
                 </div>
-                <div id="divDerechaPlay" class="mr-2 d-flex flex-row justify-content-between align-items-center">
+                <div id="divDerechaPlay" class="col-11 col-md-5 d-flex flex-row justify-content-end align-items-center"
+                    style="margin:auto">
                     <input id="cambiarJugador" type="button" class="btn btn-outline-dark fondo shadow"
                         value="Change player" />
                     <h3 class="textoScore ml-2">Score <span id="score" class="badge badge-secondary">0</span></h3>
                 </div>
             </div>
-            <div id="divContenedorTarjeta" class="col-8 offset-2 shadow p-3 rounded fondo border border-dark"></div>
+            <div id="divContenedorTarjeta" class="col-11 shadow p-3 rounded fondo border border-dark"
+                style="margin:auto"></div>
             <button id="next" type="button"
                 class="btn btn-outline-dark fondo shadow offset-5 col-2 mt-3 mb-2">Next</button>
         </div>
