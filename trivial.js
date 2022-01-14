@@ -27,6 +27,10 @@
     let elem;
     let width;
 
+    window.onload = () => {
+        document.getElementById("textoFooter").innerHTML = "Copyright © 2020 - " + new Date().getFullYear() + " - " + "by Mezdelex";
+    }
+
     boton1.addEventListener("click", () => {
         comprobarRespuesta(boton1);
     })
