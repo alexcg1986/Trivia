@@ -28,8 +28,7 @@
     let width;
 
     window.onload = () => {
-        document.getElementsByClassName("textoFooter")
-            .forEach(element => element.innerHTML = "Copyright © 2020 - " + new Date().getFullYear() + " - " + "by Mezdelex");
+        document.getElementsByClassName("textoFooter")[0].innerHTML = "Copyright © 2020 - " + new Date().getFullYear() + " - " + "Mezdelex";
     }
 
     boton1.addEventListener("click", () => {
