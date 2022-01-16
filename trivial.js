@@ -16,11 +16,9 @@
     const incorrectPassword = document.createElement("p");
     let arrayRespuestas = [];
     let arrayLocalStorage = [];
-    let token;
     let dificultad;
     let tipo;
     let usuario = {};
-    let score = 0;
     let url;
     let id;
     let mover;
@@ -61,8 +59,7 @@
     const inicializarPuntuacion = () => {
         divJoin.classList.add('d-none');
         divJuego.classList.remove('d-none');
-        score = usuario.score;
-        spanScore.innerHTML = score;
+        spanScore.innerHTML = usuario.score;
     }
 
     const cambiarUsuario = () => {
@@ -102,11 +99,10 @@
     const crearYGuardarUsuario = () => {
         url = "https://opentdb.com/api_token.php?command=request";
         fetch(url).then(recibirDatos).then((datos) => {
-            token = datos.token;
             usuario = {
                 "email": email.value,
                 "password": password.value,
-                "token": token,
+                "token": datos.token,
                 "score": 0
             };
             arrayLocalStorage.push(usuario);
@@ -297,10 +293,11 @@
         let urlReset = "https://opentdb.com/api_token.php?command=request"
         fetch(urlReset).then(recibirDatos).then((datos) => {
             usuario.token = datos.token;
-            score = 0;
+            usuario.score = 0;
             for (let index = 0; index < arrayLocalStorage.length; ++index) {
                 if (usuario.email === arrayLocalStorage[index].email) {
                     arrayLocalStorage[index].token = usuario.token;
+                    arrayLocalStorage[index].score = usuario.score;
                     break;
                 }
             }
@@ -339,16 +336,16 @@
 
             if (botonNext !== null) {
                 diccionarioDificultad = {
-                    "easy": () => score++,
-                    "medium": () => score += 2,
-                    "hard": () => score += 3
+                    "easy": () => usuario.score++,
+                    "medium": () => usuario.score += 2,
+                    "hard": () => usuario.score += 3
                 }
                 diccionarioDificultad[dificultad]();
-                scoreBadge.innerHTML = score;
+                scoreBadge.innerHTML = usuario.score;
 
                 for (let index = 0; index < arrayLocalStorage.length; ++index) {
                     if (usuario.email === arrayLocalStorage[index].email) {
-                        arrayLocalStorage[index].score = score;
+                        arrayLocalStorage[index].score = usuario.score;
                         localStorage.setItem("arrayLocalStorage", JSON.stringify(arrayLocalStorage));
                     }
                 }
