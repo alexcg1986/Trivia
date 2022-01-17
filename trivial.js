@@ -294,6 +294,7 @@
         fetch(urlReset).then(recibirDatos).then((datos) => {
             usuario.token = datos.token;
             usuario.score = 0;
+            inicializarPuntuacion();
             for (let index = 0; index < arrayLocalStorage.length; ++index) {
                 if (usuario.email === arrayLocalStorage[index].email) {
                     arrayLocalStorage[index].token = usuario.token;
